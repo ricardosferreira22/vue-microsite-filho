@@ -7,7 +7,7 @@ export default defineConfig({
     vue(),
     federation({
       name: "mfe3",
-      filename: "/(.*)",
+      filename: "remoteEntry.js",
       exposes: {
         "./ricardo": "./src/mfe-entry.js",
       },
